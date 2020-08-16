@@ -8,15 +8,15 @@ Fortunately, today’s technology allows us to create a solution. **OJOS (“eye
 [![Watch the project video submission](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ## Screenshots
-**The user profile page**
+**The user profile page**  
 Here, the user can edit their data, and their cameras:
 ![screenshot](images/profile.png)
 
-**The events page**
+**The events page**  
 Here, the user can view all the events the system recognized
 ![screenshot](images/events.png)
 
-**Reporting events**
+**Reporting events**  
 In case of wrong classification, the user can report an event. This way, we can retrain the models and achieve better accuracy as we progress.
 ![screenshot](images/events_reported.png)
 
@@ -26,7 +26,11 @@ Our project relies on multiple open source software and external services.
 * **Core eomponents:** Django, Pytorch (Torchvision)
 * **External Services:** Mailgun, Twilio (Future integration)
 
-Connecting to the IP cameras turned out to be a big challenge. We solved it by running Android emulators on EC2 machines, capturing the video from the screen, and streaming it to the classification system.
+Connecting to the IP cameras turned out to be a big challenge. After trying many different options, we solved it by running Android emulators on EC2 machines, capturing the video from the screen, and streaming it to the classification system.
+
+We used [neu.ro](https://neu.ro/) to train our human position models:
+- First we trained on UCF101, a public dataset for human action
+- We then applied transfer learning on fall & positions datasets: [Fall Detection Dataset](http://www.falldataset.com/), [UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html), [Multiple cameras fall dataset](http://www.iro.umontreal.ca/~labimage/Dataset/), and others.
 
 ## Code
 Repository | Description
