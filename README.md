@@ -25,8 +25,10 @@ In case of wrong classification, the user can report an event. This way, we can 
 ## Tech Stack
 Our project relies on multiple open source software and external services.
 
-* **Core components:** Android Emulator, Django, Pytorch (Torchvision), PostgreSQL
-* **External Services:** Mailgun, Twilio (Future integration)
+* Web: Django, PostgreSQL
+* ML and Image processing: Pytorch, ML_Flow, albumentations, OpenCV, face_recognition lib, sklearn, numpy, pandas, matplotlib
+* Tools: youtube-dl, FFMPEG
+* External: Mailgun, Twilio (Future integration), Android Virtual Device, AWS
 
 Connecting to the IP cameras turned out to be a big challenge. After trying many different options, we solved it by running Android emulators on EC2 machines, capturing the video from the screen, and streaming it to the classification system.
 
