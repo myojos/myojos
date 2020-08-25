@@ -7,7 +7,7 @@ Fortunately, today’s technology allows us to create a solution. **OJOS (“eye
 
 OJOS is a submission to the `Web and Mobile Applications powered by PyTorch` category of the hackathon.
 
-[![Watch the project video submission](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[Watch the project video submission](https://www.youtube.com/watch?v=1D2jJzY3rBE)
 
 ## Screenshots
 **The user profile page**  
