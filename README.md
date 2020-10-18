@@ -47,6 +47,8 @@ Repository | Description
 [aws_config](https://github.com/myojos/aws_config) | Configuration and shell commands for the AWS instance
 [StickFigureMode](https://github.com/myojos/StickFigureMode) | Repository for the code that helps us preserve privacy by replacing humans with stick figures
 [fall-detection](https://github.com/myojos/fall-detection) | Repository with the main content: models, notebooks, etc.
+[Monitoring-System](https://github.com/myojos/Monitoring-System) | The system responsible for monitoring cameras of various manufactures using AVD and process the stream on various models to detect events of interest. 
+
 
 ## URL
 The system is up and running on [myojos.tech](https://www.myojos.tech)
